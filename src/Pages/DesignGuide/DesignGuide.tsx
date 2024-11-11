@@ -1,4 +1,3 @@
-import { CompanyKeyMetrics } from '../../company'
 import RatioList from '../../Components/RatioList/RatioList'
 import Table from '../../Components/Table/Table'
 import { testIncomeStatementData } from '../../Components/Table/testData'
@@ -18,7 +17,7 @@ const DesignGuide = (props: Props) => {
   return (
     <>
         <RatioList data={ testIncomeStatementData} config={tableConfig}/>
-        <Table />
+        <Table data={testIncomeStatementData} config={tableConfig} />
     </>
   )
 }
