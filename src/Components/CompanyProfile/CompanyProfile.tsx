@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { CompanyKeyMetrics } from '../../company';
 import { useOutletContext } from 'react-router-dom';
 import { getKeyMetrics } from '../../api';
@@ -75,7 +75,7 @@ const CompanyProfile = (props: Props) => {
       setCompanyData(value?.data[0])
     };
     getCompanyKeyMetrics();
-  }, []);
+  }, [ticker]);
   return (
     <>
       {companyData? (
@@ -83,7 +83,7 @@ const CompanyProfile = (props: Props) => {
 
             ): (
               <>Loading ...</>
-            )};
+            )}
     </>
   )
 }

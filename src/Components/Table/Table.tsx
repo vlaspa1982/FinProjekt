@@ -9,7 +9,7 @@ const Table = ({ config, data }: Props) => {
 
       <tr key={company.cik}> {config.map((val: any) => {
         return <td className="p-3">{val.render(company)}</td>
-      })};
+      })}
       </tr>
     )
   });
