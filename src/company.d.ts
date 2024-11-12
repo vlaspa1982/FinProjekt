@@ -307,3 +307,7 @@ export interface CompanySearch {
     dividendPerShareTTM: number;
     debtToMarketCapTTM: number;
   }
+  export interface CompanyCompData {
+    symbol: string;
+    peersList: string[];
+  }
